@@ -37,16 +37,25 @@ Date: 10/1/22 -->
             width: 15%;
         } 
 
-        #img, #profile {
+        #hobbies > img, #skills > img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
         }
 
-        #skills {
+
+        ul {
             background-color: white;
             color: purple;
+        }
+        #interests {
+            color: deeppink;
+        }
+
+        p {
+           position: relative;
+           margin-top: 30px;
         }
 
         table,
@@ -69,7 +78,7 @@ Date: 10/1/22 -->
 <body> 
 
     <div class="navigation">
-        <img src="profile_pic.jpg" alt="logo" id="logo" name="logo">
+        <img src="cat.jpeg" alt="logo" id="logo">
         <nav>
             <a href="#intro">Introduction</a>
             <a href="#skills">Core Skills</a>
@@ -92,15 +101,15 @@ Date: 10/1/22 -->
                 Many of my classes utilize different languages and styles of coding that have helped me to broaden
                 my knowledge and learn new things.
             </p>
-            <img src="profile_pic.jpg" alt="profile picture" #id="profile">
         </section>
+        <img src="profile_pic.jpg" alt="profile picture" >
     </div>
     <div class="content">
         <div id="skills">
             <section>
                 <h3>Core Skills</h3>
                     Languages
-                    <ul id="skills">
+                    <ul>
                         <li>Python</li>
                         <li>C++</li>
                         <li>Java</li>
@@ -108,7 +117,7 @@ Date: 10/1/22 -->
                     </ul>
         
                     Applicable Coursework
-                    <ul id="skills">
+                    <ul>
                         <li>Data Analysis</li>
                         <li>UI/UX</li>
                         <li>Database Management</li>
@@ -148,7 +157,6 @@ Date: 10/1/22 -->
         </div>
 
         <div id="education">
-            <section>
                 <h3>Educations</h3> 
 
                 <table>
@@ -199,13 +207,12 @@ Date: 10/1/22 -->
                         <td>SQL</td>
                     </tr>
                 </table>
-            </section>
         </div>
 
         <div id="hobbies">
             <section>
                 <h3>Interests and Hobbies</h3> 
-                <ol>
+                <ol id="interests">
                     <li>Hiking</li>
                     <li>Swimming</li>
                     <li>Reading</li>
@@ -213,16 +220,14 @@ Date: 10/1/22 -->
                 </ol>
         
         
-                <p>
-                    <a href="https://www.discoverpass.wa.gov/" target="_blank">
-                        <img src="hiking.jpg" alt="This is a link to a hiking pass" width="250" id="img">
-                    </a>
-                </p>
+            <p>
+                <a href="https://www.discoverpass.wa.gov/" target="_blank">
+                    <img src="hiking.jpg" alt="This is a link to a hiking pass" width="250">
+                </a>
+            </p>
 
             </section>
         </div>
     </div>
 </body> 
-
-
 </html> 
