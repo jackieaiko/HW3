@@ -1,0 +1,228 @@
+<!-- Name: Jackie Ramsey
+Class: CPSC 332
+Assignment: Homework 3
+Date: 10/1/22 -->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal CV</title> 
+
+    <link rel="shortcut icon" type="image/x-icon" href="pumpkin.ico">
+
+    <style>
+        .navigation {
+            background: gray;
+            width: 100%;
+        }
+        .introduction {
+            background: green;
+            width: 30%;
+            height: 1000px;
+            float: left;
+        }
+        .content {
+            background: blue;
+            width: 70%;
+            float: right;
+            height: 1000px;
+        }
+
+        #logo {
+            display: block;
+            margin-left: auto;
+            width: 15%;
+        } 
+
+        #img, #profile {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #skills {
+            background-color: white;
+            color: purple;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: darkgreen;
+        }
+        tr:nth-child(odd) {
+            background-color: forestgreen;
+        }
+
+
+    </style>
+</head> 
+
+<body> 
+
+    <div class="navigation">
+        <img src="profile_pic.jpg" alt="logo" id="logo" name="logo">
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#skills">Core Skills</a>
+            <a href="#career">Career</a>
+            <a href="#education">Education</a>
+            <a href="#qualifications">Qualifications</a>
+            <a href="#hobbies">Interests and Hobbies</a>
+        </nav>
+
+    </div>
+
+    <div class="introduction" id="intro">
+        <h1>Jackie Ramsey</h1>
+        <h2>College Student</h2>
+        <section>
+            <h3>Summary</h3>
+            <p>
+                I am currently an undergrauate student majoring in computer science.
+                I have had experience in different fields of computer science such as data science, software development, and security. 
+                Many of my classes utilize different languages and styles of coding that have helped me to broaden
+                my knowledge and learn new things.
+            </p>
+            <img src="profile_pic.jpg" alt="profile picture" #id="profile">
+        </section>
+    </div>
+    <div class="content">
+        <div id="skills">
+            <section>
+                <h3>Core Skills</h3>
+                    Languages
+                    <ul id="skills">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+        
+                    Applicable Coursework
+                    <ul id="skills">
+                        <li>Data Analysis</li>
+                        <li>UI/UX</li>
+                        <li>Database Management</li>
+                        <li>Computer Security</li>
+                        <li>Algorithms and Abstract Data Structures</li>
+                    </ul>
+            </section>
+        </div>
+
+        <div id="career">
+            <section>
+                <h3>Career Summary</h3> 
+                <table>
+                    <caption>
+                        Work Experience
+                    </caption>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Job Title</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Flying Academy</td>
+                        <td>Washington</td>
+                        <td>Front Desk/Dispatch</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Lakeshore Athletic Club</td>
+                        <td>Washington</td>
+                        <td>Lifeguard</td>
+                        <td>2016</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div id="education">
+            <section>
+                <h3>Educations</h3> 
+
+                <table>
+                    <caption>
+                        Education
+                    </caption>
+                    <tr>
+                        <th>School</th>
+                        <th>Location</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <td>Gonzaga University</td>
+                        <td>Washington</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>Seton High School</td>
+                        <td>Washington</td>
+                        <td>3.9</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div id="qualifications">
+                <table>
+                    <caption>
+                        Qualifications
+                    </caption>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Curriculum</th>
+                        <th>Language</th>
+                    </tr>
+                    <tr>
+                        <td>Aggregation anhd Mining</td>
+                        <td>Data Anaylsis</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Virus Tracking</td>
+                        <td>Computer Security</td>
+                        <td>Variety of Tools</td>
+                    </tr>
+                    <tr>
+                        <td>Queries and Relational Algebra</td>
+                        <td>Database Management</td>
+                        <td>SQL</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div id="hobbies">
+            <section>
+                <h3>Interests and Hobbies</h3> 
+                <ol>
+                    <li>Hiking</li>
+                    <li>Swimming</li>
+                    <li>Reading</li>
+                    <li>Eating</li>
+                </ol>
+        
+        
+                <p>
+                    <a href="https://www.discoverpass.wa.gov/" target="_blank">
+                        <img src="hiking.jpg" alt="This is a link to a hiking pass" width="250" id="img">
+                    </a>
+                </p>
+
+            </section>
+        </div>
+    </div>
+</body> 
+
+
+</html> 
